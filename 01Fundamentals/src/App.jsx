@@ -1,15 +1,13 @@
-import StyleCard from "./components/StyleCard";
-import ProfileCard from "./components/ProfileCard";
-import IconComponent from "./components/IconComponent";
+import React from 'react';
+import EventDemo from "./components/EventDemo";
 
-const App = () => {
+function App() {
   return (
     <div>
-      <StyleCard />
-      <ProfileCard />
-      <IconComponent />
+      <h1>React Event Handling Challenge</h1>
+      <EventDemo />
     </div>
   );
-};
+}
 
 export default App;
