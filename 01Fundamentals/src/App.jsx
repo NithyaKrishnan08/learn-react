@@ -1,11 +1,10 @@
-import Greeting from './components/Greeting.jsx';
-import ProductInfo from './components/ProductInfo.jsx';
-
+import UserList from './components/UserList.jsx';
+import ProductList from './components/ProductList.jsx';
 function App () {
   return(
     <div>
-      <Greeting />
-      <ProductInfo />
+      <UserList />
+      <ProductList />
     </div>
   );
 }
