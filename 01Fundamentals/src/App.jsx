@@ -1,21 +1,26 @@
-import Card from "./components/Card";
+import Weather from "./components/Weather";
+import UserStatus from "./components/UserStatus";
+import Greeting from "./components/Greeting";
 
 const App = () => {
   return (
     <div>
-      <h1>My Cards</h1>
-      <Card>
-        <h2>Card Title 1</h2>
-        <p>This is some content for card 1.</p>
-      </Card>
-      <Card>
-        <h2>Card Title 2</h2>
-        <p>This is some content for card 2.</p>
-      </Card>
-      <Card>
-        <h2>Card Title 3</h2>
-        <p>This is some content for card 3.</p>
-      </Card>
+      <h1>Conditional Rendering in React</h1>
+
+      {/* Weather component */}
+      <Weather temperature={10} />
+      <Weather temperature={20} />
+      <Weather temperature={30} />
+
+      {/* UserStatus component */}
+      <UserStatus loggedIn={true} />
+      <UserStatus loggedIn={false} />
+      <UserStatus loggedIn={true} isAdmin={true} />
+
+      {/* Greeting component */}
+      <Greeting timeOfDay="morning" />
+      <Greeting timeOfDay="afternoon" />
+      <Greeting />
     </div>
   );
 };
