@@ -1,11 +1,16 @@
 import React from 'react';
-import EventDemo from "./components/EventDemo";
-
+import TodoList from "./components/TodoList";
+import Profile from "./components/Profile";
+import Counter from "./components/Counter";
+import ShoppingList from "./components/ShoppingList";
 function App() {
   return (
     <div>
-      <h1>React Event Handling Challenge</h1>
-      <EventDemo />
+      <h1>React useState Examples</h1>
+      <Counter />
+      <TodoList />
+      <Profile />
+      <ShoppingList />
     </div>
   );
 }
