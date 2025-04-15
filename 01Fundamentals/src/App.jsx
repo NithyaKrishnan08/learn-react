@@ -1,11 +1,11 @@
 import React from 'react';
-import CopyInput from "./components/CopyInput";
+import Switcher from "./components/Switcher";
 
 function App() {
   return (
     <div>
-      <h1>React Portal</h1>
-      <CopyInput />
+      <h1>Advanced Key Concepts</h1>
+      <Switcher />
     </div>
   );
 }
